@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Edu15
-- 👀 I’m interested in Developer Sistem
+- 👀 I’m interested in be Developer Sistem
 - 🌱 I’m currently learning language java
   
 
