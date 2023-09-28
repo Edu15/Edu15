@@ -26,8 +26,9 @@ public class Users {
 //    private UUID pk_users;
     private Generos gender;
     private String password;
+    private String date_birthday;
 
-    public Users(String name, String telefone, String email, String cpf, String nickname, String profile_picture, String descricao, String banner, int int_is_creator, String genero, String password) {
+    public Users(String name, String telefone, String email, String cpf, String nickname, String profile_picture, String descricao, String banner, int int_is_creator, String genero, String password, LocalDate date_birthday) {
         this.name = name;
         this.telefone = telefone;
         this.email = email;
@@ -39,6 +40,7 @@ public class Users {
         this.int_is_creator = int_is_creator;
         this.gender = Generos.valueOf(genero);
         this.password = password;
+        this.date_birthday = String.valueOf(date_birthday);
     }
 
     public String getName() {
@@ -69,7 +71,9 @@ public class Users {
         return cpf;
     }
 
-
+    public String getDate_birthday() {
+        return date_birthday;
+    }
 
     public String getNickname() {
         return nickname;

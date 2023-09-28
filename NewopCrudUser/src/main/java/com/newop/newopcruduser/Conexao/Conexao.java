@@ -10,7 +10,8 @@ public class Conexao {
     public static Connection conectar(){
         try {
             Class.forName("org.postgresql.Driver");
-            return DriverManager.getConnection("jdbc:postgresql://localhost:5432/newop","postgres", "1234");
+            return DriverManager.getConnection("jdbc:postgresql://localhost:5432/newop_data_yzvn","postgres", "1234");
+            // troque esses dados e coloque o do seu
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
